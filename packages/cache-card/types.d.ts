@@ -1,0 +1,1 @@
+declare module '@ali/aepay-cache-card';

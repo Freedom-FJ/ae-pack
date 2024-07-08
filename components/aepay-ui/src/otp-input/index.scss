@@ -1,0 +1,29 @@
+@import '../var.scss';
+
+.#{$prefix}otp-input {
+  display: flex;
+  align-items: center;
+
+  &-item.next-input {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--corner-2, 6px);
+    text-align: center;
+    margin-right: var(--s-3, 12px);
+
+    input {
+      padding: 0;
+      text-align: center;
+    }
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &-item.next-input:not(.next-error) {
+    border: var(--line-1, 1px) solid var(--color-line1-2, #D4D8DE);
+  }
+}

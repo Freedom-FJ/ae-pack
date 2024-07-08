@@ -1,0 +1,97 @@
+@import '../var.scss';
+
+.#{$prefix}realId {
+  background-color: var(--color-white, #fff);
+
+  .next-form-item .next-form-item-label {
+    font-size: var(--font-size-body-2, 14px);
+    color: var(--color-text1-4, #2B323B);
+    line-height: 22px;
+    font-weight: var(--font-weight-semi-bold, 600);
+  }
+  
+  .next-form-item-label label[required]:before {
+    width: 8px;
+    font-size: var(--font-size-body-2, 14px);
+    color: var(--color-error-3, #E6200A);
+    line-height: 22px;
+    font-weight: var(--font-weight-semi-bold, 600);
+    display: inline-block;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  .next-form-item-control {
+    width: var(--aep-form-item-width, 384px);
+  }
+
+  .#{$prefix}auth {
+    margin-bottom: 0;
+  }
+
+  .#{$prefix}tip {
+    font-size: var(--font-size-body-2, 14px);
+    color: var(--color-text1-4, #2B323B);
+    line-height: 22px;
+    font-weight: var(--font-weight-2, 400);
+    margin-bottom: var(--s-4, 16px);
+  }
+
+  .#{$prefix}authInfo {
+    width: 381px;
+    font-size: var(--font-size-body-2, 14px);
+    color: var(--color-text1-2, #6E7785);
+    line-height: 22px;
+    font-weight: var(--font-weight-2, 400);
+  }
+
+  .#{$prefix}qrcode {
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .#{$prefix}reset {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .next-btn.next-medium {
+      height: 36px;
+      padding: 0 12px;
+      min-width: 90px;
+    }
+  }
+}
+
+.#{$prefix}dialog .next-dialog-body {
+  padding-bottom: 0!important;
+}
+
+.#{$prefix}pendingDialog {
+  .next-dialog-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0;
+    padding-top: var(--s-8, 32px);
+    padding-bottom: 0;
+  }
+
+  .next-loading {
+    height: 48px;
+  }
+
+  .#{$prefix}pendText {
+    margin-top: var(--s-4, 16px);
+    font-size: var(--font-size-body-2, 14px);
+    line-height: 24px;
+  }
+}

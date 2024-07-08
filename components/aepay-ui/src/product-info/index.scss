@@ -1,0 +1,60 @@
+@import '../var.scss';
+
+.#{$prefix}product {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  overflow: hidden;
+
+  .#{$prefix}product-img {
+    width: 66px;
+    height: 66px;
+    border-radius: var(--corner-1);
+    background-color: var(--color-fill1-2);
+    overflow: hidden;
+    object-fit: contain;
+    cursor: pointer;
+    position: relative;
+
+    &-root {
+      margin-right: var(--s-3, 12px);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+  }
+
+  &-info {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  &-title {
+    font-size: var(--font-size-body-2);
+    color: var(--color-text1-4);
+    line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-desc {
+    font-size: var(--font-size-body-2);
+    color: var(--color-text1-2);
+    line-height: 22px;
+    font-weight: var(--font-weight-2);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+
+  &-copy-text {
+    max-width: 100%;
+  }
+
+  &-text {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

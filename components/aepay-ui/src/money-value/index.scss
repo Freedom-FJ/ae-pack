@@ -1,0 +1,12 @@
+@import '../var.scss';
+
+.#{$prefix}money-value {
+  .ml1 {
+    margin-left: var(--s-1);
+  }
+  
+  .mr1 {
+    margin-right: var(--s-1);
+  }
+}
+

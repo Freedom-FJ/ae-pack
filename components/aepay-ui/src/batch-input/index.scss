@@ -1,0 +1,15 @@
+@import '../var.scss';
+
+.#{$prefix}batch-textarea {
+  position: relative;
+
+  &-count {
+    position: absolute;
+    right: var(--s-2, 8px);
+    bottom: var(--s-2, 8px);
+    color: #b8bec7;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+

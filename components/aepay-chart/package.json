@@ -1,0 +1,74 @@
+{
+  "name": "@ali/aepay-chart",
+  "version": "1.0.1",
+  "title": "aepay图表组件",
+  "description": "aepay图表组件",
+  "files": [
+    "esm",
+    "es2017",
+    "cjs",
+    "dist",
+    "build"
+  ],
+  "main": "esm/index.js",
+  "module": "esm/index.js",
+  "types": "esm/index.d.ts",
+  "exports": {
+    ".": {
+      "es2017": {
+        "types": "./es2017/index.d.ts",
+        "default": "./es2017/index.js"
+      },
+      "default": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
+    },
+    "./*": "./*"
+  },
+  "sideEffects": [
+    "dist/*",
+    "*.scss",
+    "*.less",
+    "*.css"
+  ],
+  "scripts": {
+    "dev": "ice-pkg start",
+    "start": "ice-pkg start",
+    "build": "ice-pkg build",
+    "clean": "rm -rf node_modules/* && rm -rf .docusaurus && rm -rf .pegasus  && rm -rf esm && rm -rf es2017 && rm -rf dist && rm -rf build",
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+    "eslint:fix": "npm run eslint -- --fix",
+    "stylelint": "stylelint \"**/*.{css,scss,less}\"",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "dependencies": {
+    "@antv/g2": "^5.1.15",
+    "@ice/jsx-runtime": "^0.2.0",
+    "@swc/helpers": "^0.4.14"
+  },
+  "devDependencies": {
+    "@applint/spec": "^1.2.3",
+    "@ice/pkg": "^1.5.5",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "^8.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "stylelint": "^15.0.0"
+  },
+  "componentConfig": {
+    "name": "aepay-chart",
+    "title": "aepay-chart",
+    "category": ""
+  },
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@ali/aepay-cache-card",
+  "version": "1.0.0",
+  "description": "common utils",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "scripts": {
+    "dev": "ice-pkg start",
+    "start": "ice-pkg start",
+    "build": "ice-pkg build && mkdir -p dist/ && cp README.md dist/",
+    "clean": "rm -rf node_modules && rm -rf esm && rm -rf cjs && rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "authors": [
+    "xuhang"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled",
+    "esm",
+    "cjs",
+    "build"
+  ],
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18"
+  },
+  "dependencies": {
+    "@ali/aepay-utils": "*",
+    "@ice/jsx-runtime": "^0.2.0",
+    "@swc/helpers": "^0.4.14",
+    "node-forge": "^1.3.1"
+  },
+  "devDependencies": {
+    "@ice/pkg": "^1.5.5",
+    "@types/node-forge": "^1.3.11",
+    "@types/react": "^17.0.62",
+    "react": "^17.0.2"
+  }
+}

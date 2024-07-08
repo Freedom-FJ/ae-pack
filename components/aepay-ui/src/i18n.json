@@ -1,0 +1,33 @@
+{
+  "aepayui.Table.Action": "操作",
+  "aepayui.Pagination.RowsPerPage": "每页行数",
+  "aepayui.Pagination.GoTo": "跳转到",
+  "aepayui.Pagination.Page": "页",
+  "aepayui.Pagination.Total": "总计：{total}",
+  "aepayui.Pagination.Go": "确定",
+
+  "aepayui.CopyText.CopySuccess": "复制成功",
+
+  "aepayui.Uploader.UpToMaxsizeCurrentImage": "最大不超过 {{maxSize}}，当前尺寸 {{currentSize}}",
+  "aepayui.Uploader.TheMinimumValueIsMinsize": "最小不低于 {{minSize}}，当前尺寸 {{currentSize}}",
+  "aepayui.Uploader.FileFormatAccept": "仅支持文件格式: {{accept}}",
+  "aepayui.Uploader.AllMaxFileSize": "所有文件总量不超过 {{maxSize}}，当前 {{currentSize}}",
+  "aepayui.Uploader.ImagePreview": "图片预览",
+  "aepayui.Uploader.UploadFiles": "上传文件",
+  "aepayui.Uploader.UploadFailed": "上传失败",
+  "aepayui.Uploader.UploadSuccess": "上传成功",
+
+  "aepayui.ConfirmBtn.Title": "是否提交?",
+  "aepayui.ConfirmBtn.BtnText": "提交",
+  "aepayui.ConfirmBtn.OK": "提交",
+  "aepayui.ConfirmBtn.Cancel": "取消",
+
+  "aepayui.ProductInfo.SKUCode": "SKU描述",
+  "aepayui.ProductInfo.GoodsID": "商品ID",
+
+  "aepayui.BatchInput.Placeholder": "请输入，多条以','隔开",
+
+  "aepayui.CardNumInput.Placeholder": "请输入",
+  "aepayui.CoverText.openText": "收起全部",
+  "aepayui.CoverText.closeText": "展开全部"
+}

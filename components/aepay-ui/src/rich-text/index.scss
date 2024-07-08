@@ -1,0 +1,10 @@
+@import '../var.scss';
+
+.#{$prefix}richText {
+  a {
+    color: var(--color-brand1-6, rgba(2,107,255,1));
+    cursor: pointer;
+    margin: 0 var(--s-1, 4px);
+    text-decoration: none;
+  }
+}

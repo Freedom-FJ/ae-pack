@@ -1,0 +1,112 @@
+@import '../var.scss';
+
+.#{$prefix}state-label {
+  display: inline-block;
+  word-break: break-word;
+
+  &-container {
+    display: inline-flex;
+    min-width: 74px;
+    padding: 1px 8px;
+    border-radius: 10px;
+  }
+
+  &-success {
+    background-color: var(--color-success-1, #E4FBDF);
+  }
+
+  &-error {
+    background-color: rgba(255, 241, 240, 1);
+  }
+
+  &-warning {
+    background-color: var(--color-warning-1, #FFF3E0);
+  }
+
+  &-unavailable {
+    background-color: var(--color-fill1-2, #F1F2F4);
+  }
+
+  &-prompt {
+    background-color: rgba(237, 244, 255, 1);
+  }
+
+  &-point {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    margin-right: 4px;
+    border-radius: 6px;
+
+    span {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+    }
+  }
+
+  &-success &-point {
+    background-color: rgba(26, 167, 1, 0.2);
+
+    span {
+      background-color: #1aa701;
+    }
+  }
+
+  &-error &-point {
+    background-color: rgba(255, 80, 61, 0.2);
+
+    span {
+      background-color: #ff503d;
+    }
+  }
+
+  &-warning &-point {
+    background-color: rgba(245, 98, 0, 0.2);
+
+    span {
+      background-color: #f56200;
+    }
+  }
+
+  &-unavailable &-point {
+    background-color: rgba(80, 88, 98, 0.2);
+
+    span {
+      background-color: #818a98;
+    }
+  }
+
+  &-prompt &-point {
+    background-color: rgba(2, 107, 255, 0.2);
+
+    span {
+      background-color: var(--color-brand1-6, #026bff);
+    }
+  }
+
+  &-text {
+    font-size: var(--font-size-body-2);
+    color: var(--color-text1-4);
+    line-height: 22px;
+    font-weight: var(--font-weight-2);
+  }
+
+  &-extra {
+    margin-top: var(--s-1, 4px);
+    color: #818a98;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    a {
+      color: var(--color-brand1-6, #026bff);
+      text-decoration: none;
+    }
+  }
+}

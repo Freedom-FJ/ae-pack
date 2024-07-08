@@ -1,0 +1,17 @@
+@import '../var.scss';
+.#{$prefix}confirm-btn {
+  &-content-text {
+    margin-bottom: 31px;
+    color: var(--color-text1-4);
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &-btn-box {
+    text-align: right;
+
+    button + button {
+      margin-left: 12px;
+    }
+  }
+}

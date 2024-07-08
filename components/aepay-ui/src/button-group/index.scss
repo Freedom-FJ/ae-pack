@@ -1,0 +1,18 @@
+@import '../var.scss';
+
+.#{$prefix}button-group {
+  display: flex;
+  align-items: center;
+
+  button:not(:first-child) {
+    margin-left: var(--s-3, 12px);
+  }
+
+  &-more-popup {
+    .next-menu.next-ver {
+      .next-menu-item {
+        padding: 0 var(--s-3, 12px);
+      }
+    }
+  }
+}

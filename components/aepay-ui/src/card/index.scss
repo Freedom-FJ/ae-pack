@@ -1,0 +1,44 @@
+@import '../var.scss';
+
+.#{$prefix}card {
+  padding: var(--s-4, 12px);
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      display: flex;
+      align-items: center;
+
+      .#{$prefix}tooltip  {
+        font-size: var(--font-size-title, 18px);
+        color: var(--color-text1-4, #2b322b);
+        line-height: 28px;
+        font-weight: var(--font-weight-semi-bold, 600);
+
+        &-icon {
+          margin-top: -4px;
+          display: block;
+        }
+      }
+    }
+
+    &-extra {
+      font-size: var(--font-size-body-2);
+      color: var(--color-text1-2);
+      line-height: 22px;
+      font-weight: var(--font-weight-2);
+      margin-left: var(--s-2);
+      white-space: nowrap;
+    }
+  }
+
+  &-actions {
+    padding: 0 6px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+

@@ -1,0 +1,12 @@
+@import '../var.scss';
+
+.#{$prefix}eyeText {
+  font-size: $font-size-body-2;
+  color: $color-text1-4;
+  font-weight: $font-weight-2;
+
+  i {
+    color: $color-brand1-6;
+    margin-left: $s-1;
+  }
+}

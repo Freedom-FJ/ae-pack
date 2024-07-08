@@ -1,0 +1,25 @@
+@import '../var.scss';
+
+.#{$prefix}cover-text {
+  display: block;
+
+  &-box {
+    max-height: 65px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  &-check {
+    color: var(--color-brand1-6);
+    cursor: pointer;
+  }
+
+  &-rolling-arrow {
+    transition: all 0.5s;
+  }
+
+  &-rolling-arrow-down {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+}

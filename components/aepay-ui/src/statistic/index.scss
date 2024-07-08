@@ -1,0 +1,37 @@
+@import '../var.scss';
+
+.#{$prefix}statistic {
+  &-item {
+    &-title {
+      display: flex;
+      align-items: center;
+    }
+
+    &-tooltip {
+      font-weight: normal;
+    }
+
+    &-data {
+      color: var(--color-text1-4);
+      line-height: var(--font-lineheight-2);
+      font-weight: var(--font-weight-medium);
+    }
+
+    &-amount {
+      font-size: var(--font-size-display-1);
+      font-weight: var(--font-weight-semi-bold);
+    }
+
+    &-currency {
+      line-height: 22px;
+      font-size: var(--font-size-body-2);
+    }
+
+    &-currencySymbol {
+      font-size: var(--font-size-body-2);
+      line-height: 22px;
+      font-weight: var(--font-weight-semi-bold);
+    }
+  }
+}
+
